@@ -2,16 +2,10 @@
 Data processing modules for each modality
 """
 
-from .speech_processor import SpeechProcessor
-from .eye_processor import EyeTrackingProcessor
-from .typing_processor import TypingProcessor
-from .drawing_processor import DrawingProcessor
-from .gait_processor import GaitProcessor
+from .dataset import MultimodalAlzheimerDataset
+from .synthetic_data_generator import generate_synthetic_dataset
 
 __all__ = [
-    'SpeechProcessor',
-    'EyeTrackingProcessor',
-    'TypingProcessor',
-    'DrawingProcessor',
-    'GaitProcessor'
+    'MultimodalAlzheimerDataset',
+    'generate_synthetic_dataset'
 ]
